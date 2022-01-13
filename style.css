@@ -49,6 +49,38 @@ html {
     box-shadow: 0px 0px 1rem .5rem #bfd0ef;
 }
 
+nav,
+.navbar-brand {
+    font-size: 2.2rem;
+    background: rgba(180, 180, 180, 0.3);
+    font-family: 'Work Sans', sans-serif;
+}
+
+nav ul li {
+    margin-left: .5rem;
+}
+
+nav ul li:hover {
+    background: rgba(175, 175, 175, 0.6);
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 4rem;
+    border-radius: 20%;
+}
+
+.btn:hover {
+    background-color: #9c6cebf3;
+    transform: translateY(-5px);
+}
+
 .homepage::before {
     content: "Back-End";
     text-align: center;
@@ -73,6 +105,13 @@ html {
     transform: translate(-180px, -270px);
     font-weight: bold;
     animation: Front-End 3s infinite;
+}
+
+@media (max-width: 728px) {
+     ::before,
+     ::after {
+        display: none;
+    }
 }
 
 @keyframes Front-End {
@@ -103,39 +142,4 @@ html {
     100% {
         background-position: 0% 50%;
     }
-}
-
-nav,
-.navbar-brand {
-    font-size: 2.2rem;
-    background: rgba(180, 180, 180, 0.3);
-    font-family: 'Work Sans', sans-serif;
-}
-
-nav ul li {
-    margin-left: .5rem;
-}
-
-nav ul li:hover {
-    background: rgba(175, 175, 175, 0.6);
-}
-
-.btn {
-    background-color: rgba(0, 0, 0, 0.3);
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin-top: 4rem;
-    border-radius: 20%;
-}
-
-
-/* Darker background on mouse-over */
-
-.btn:hover {
-    background-color: #9c6cebf3;
-    transform: translateY(-5px);
 }
